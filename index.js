@@ -30,3 +30,15 @@ list.addEventListener("click", (event) => {
     li.remove()
   }
 })
+
+const hideBtn = document.querySelector(".hidden")
+
+hideBtn.addEventListener("click", (event) => {
+  if (list.style.visibility == 'visible'){
+    list.style.visibility = 'hidden';
+    hideBtn.textContent = 'Show'
+  }else{
+    list.style.visibility = 'visible';
+    hideBtn.textContent = 'Hide'
+  }
+})
